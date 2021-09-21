@@ -18,10 +18,11 @@ let clickHandler = () => {
   fetch(convertedUrl(inputText))
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       let translatedData = data.contents.translated;
       output.innerText = translatedData;
-    });
+    })
+    .catch((error) => console.log(error.message));
 };
 
 buttonTranslate.addEventListener("click", clickHandler);
