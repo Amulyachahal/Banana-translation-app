@@ -43,7 +43,7 @@
   font-family: "Grechen Fuemen", cursive;
   font-size: 2rem;
   font-weight: bold;
-  height: 150px;
+  height: 230px;
   margin-top: 3rem;
   margin-bottom: 0rem;
   padding-bottom: 0rem;
@@ -52,6 +52,8 @@
 .footer-div {
   text-align: center;
   min-height: fit-content;
+  background-color: rgb(230, 230, 73);
+
   /* overflow: hidden; */
 }
 
