@@ -1,13 +1,9 @@
-// alert("what is your name?");
-// let userName = prompt("What is your name?");
-// alert("welcome " + userName);
-
 let userInput = document.querySelector("#txt-input");
 let buttonTranslate = document.querySelector("#btn-translate");
 let output = document.querySelector("#output");
 let url = "	https://api.funtranslations.com/translate/minion.json";
-let url2 = "	https://api.funtranslations.com/translate/hodor.json";
-let testUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+// let url2 = "	https://api.funtranslations.com/translate/hodor.json";
+// let testUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
 
 let convertedUrl = (text) => {
   return url + "?" + "text=" + text;
