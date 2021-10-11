@@ -17,7 +17,12 @@ let clickHandler = () => {
       // console.log(data);
       let translatedData = data.contents.translated;
       output.innerText = translatedData;
-    });
+    })
+    .catch(errorHandler);
 };
+function errorHandler(error) {
+  console.log("Error occured - ", error);
+  alert("Server Error, Please try again after sometime ^.^");
+}
 
 buttonTranslate.addEventListener("click", clickHandler);
